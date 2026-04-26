@@ -46,6 +46,7 @@ castellatedMeshControls
         cylinder { mode distance; levels ((0.5 2)); } // 尾迹区加密
     }
     locationInMesh (1 0 0); // 保留流体域内的网格
+    allowFreeStandingZoneFaces true;
 }
 
 snapControls
