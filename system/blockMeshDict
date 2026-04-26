@@ -51,7 +51,7 @@ boundary
     }
     topAndBottom
     {
-        type symmetryPlane;
+        type symmetry;
         faces ( (3 7 6 2) (0 1 5 4) );
     }
     frontAndBack

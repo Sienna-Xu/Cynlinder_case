@@ -30,7 +30,7 @@ boundaryField
     }
     topAndBottom
     {
-        type            symmetryPlane;
+        type            symmetry;
     }
     cylinder
     {

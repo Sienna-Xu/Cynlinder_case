@@ -17,6 +17,7 @@ FoamFile
 castellatedMesh true;
 snap            true;
 addLayers       true;
+mergeTolerance  1e-6;
 
 geometry
 {
