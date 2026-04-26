@@ -16,6 +16,14 @@ FoamFile
 
 numberOfSubdomains 4;
 
-method          scotch;
+// 将原来的 scotch 改为 OpenFOAM 原生的 simple 算法
+method          simple;
+
+// 为 simple 算法提供切分参数
+simpleCoeffs
+{
+    n           (2 2 1); // X方向分2块，Y方向分2块，Z方向保持1块不变
+    delta       0.001;   // 默认的网格偏斜容差，保持默认即可
+}
 
 // ************************************************************************* //
