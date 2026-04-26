@@ -14,4 +14,4 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-simulationType  laminar; // 层流模拟
+simulationType  laminar;
