@@ -24,7 +24,7 @@ writeControl    timeStep;
 writeInterval   20; // 每20步输出一次结果
 purgeWrite      0;
 writeFormat     ascii;
-writePrecision  6;
+writePrecision  10;
 writeCompression off;
 timeFormat      general;
 timePrecision   6;
