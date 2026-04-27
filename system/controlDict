@@ -18,10 +18,10 @@ application     pisoFoam;
 startFrom       startTime;
 startTime       0;
 stopAt          endTime;
-endTime         10; // 模拟总时间
-deltaT          0.005; // 时间步长，需根据网格确保库朗数 Co < 1
-writeControl    timeStep;
-writeInterval   20; // 每20步输出一次结果
+endTime         50; // 增加模拟时间
+deltaT          0.002; // 减小步长
+writeControl    runTime;
+writeInterval   0.5; // 每0.5s保存一次
 purgeWrite      0;
 writeFormat     ascii;
 writePrecision  10;

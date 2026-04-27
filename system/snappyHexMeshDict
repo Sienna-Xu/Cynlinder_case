@@ -26,6 +26,12 @@ geometry
         type triSurfaceMesh;
         name cylinder;
     }
+    wake
+    {
+        type searchableBox;
+        min (0 -2 -0.05);
+        max (12 2 0.05);
+    }
 }
 
 castellatedMeshControls
@@ -43,7 +49,12 @@ castellatedMeshControls
     resolveFeatureAngle 30;
     refinementRegions
     {
-        cylinder { mode distance; levels ((0.5 2)); } // 尾迹区加密
+        cylinder { mode distance; levels ((0.5 3)); }
+        wake
+        {
+            mode inside;
+            levels ((1 2));
+        }
     }
     locationInMesh (1 0 0); // 保留流体域内的网格
     allowFreeStandingZoneFaces true;
